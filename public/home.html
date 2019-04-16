@@ -11,5 +11,23 @@
         <h2>Welcome to James Shively's Advanced JavaScript ITC230 webpage.</h2>
         <p>Now sit back, light a cigarette if you got 'em, and enjoy the ride.</p>
     </section>
+    <div id="one"></div>
+    <script>
+        var albums = [
+            {albumTitle: 'L\'appel du Vide', seriesTitle: 'Chronicles of Sado: Chapter One', tracks: 'Five'},
+            {albumTitle: 'Suppressed Aggression', seriesTitle: 'Chronicles of Sado: Chapter Two', tracks: 'Five'},
+            {albumTitle: 'untitled', seriesTitle: 'Chronicles of Sado: Chapter Three', tracks: 'Five'},
+            {albumTitle: 'The Era of Artificial Intelligence and Organic Idiocracy', seriesTitle: 'The Socio-Political Series', tracks: 'Thirteen'},
+            {albumTitle: 'Overmedicated', seriesTitle: 'Chronicles of Sado: Chapter Four', tracks: 'Five'},
+            {albumTitle: 'Chronicles of Sado (remastered)', seriesTitle: 'Chronicles of Sado: Chapter 1-4', tracks: 'Twenty'}
+        ];
+
+        exports.titleAsc = function() {
+            // return a sorted list of books
+            return this.albums.sort(function(a, b) {
+            return a.price > b.price;
+            });
+        }
+    </script>
 </body>
 </html>
