@@ -24,7 +24,5 @@ const http = require("http");
           res.end('Not found');
           break;
         }
-    //res.writeHead(200, {'Content-Type': 'text/plain'});
-    //res.end('Aloha world');
   }).listen(process.env.PORT || 3000);
     console.log("Server created");
