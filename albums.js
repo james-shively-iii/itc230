@@ -12,29 +12,23 @@ exports.getAll = function ()  {
     return albums;
 }
   
-exports.getOne = function (albumTitle) {
+exports.get = function (albumTitle) {
     var  album = [];
     for (let i = 0; i < albums.length; i++) {
         if (albums[i].albumTitle === albumTitle) {
-        album.push(albums[i]);
+            album.push(albums[i]);
         }
     }
     return album;
 }
 
-exports.deleteOne = function (albumTitle) {
+exports.delete = function (albumTitle) {
     let album = [];
     for (let i = 0; i < albumTitle.length; i++) {
         if (albums[i].albumTitle !== albumTitle) {
-        album.push(albums[i]);
+            album.push(albums[i]);
         }
     }
     console.log("Deleting " + albumTitle + " from the list");
     return album;
-}
-
-exports.deleteOneV2 = function (albumTitle) {
-    return albums.filter(function(data) {
-        return data.albumTitle !== albumTitle;
-    })
 }
