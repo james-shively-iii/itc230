@@ -12,21 +12,30 @@ exports.getAll = () =>  {
     return albums;
 }
   
+<<<<<<< HEAD
 exports.getOne = (albumTitle) => {
     let  album = [];
+=======
+exports.get = function (albumTitle) {
+    var  album = [];
+>>>>>>> d85501fc8f93a469b9337909353f8c07997c2810
     for (let i = 0; i < albums.length; i++) {
         if (albums[i].albumTitle === albumTitle) {
-        album.push(albums[i]);
+            album.push(albums[i]);
         }
     }
     return album;
 }
 
+<<<<<<< HEAD
 exports.deleteOne =  (albumTitle) => {
+=======
+exports.delete = function (albumTitle) {
+>>>>>>> d85501fc8f93a469b9337909353f8c07997c2810
     let album = [];
     for (let i = 0; i < albumTitle.length; i++) {
         if (albums[i].albumTitle !== albumTitle) {
-        album.push(albums[i]);
+            album.push(albums[i]);
         }
     }
     console.log("Deleting " + albumTitle + " from the list");
