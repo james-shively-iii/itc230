@@ -8,12 +8,12 @@ var albums = [
     {albumTItle: 'Odis Mills Presents: Socialist Slim', seriesTitle: 'The Socio-Political Series', tracks: 'Eighteen'}
 ];
 
-exports.getAll = function ()  {
+exports.getAll = () =>  {
     return albums;
 }
   
-exports.getOne = function (albumTitle) {
-    var  album = [];
+exports.getOne = (albumTitle) => {
+    let  album = [];
     for (let i = 0; i < albums.length; i++) {
         if (albums[i].albumTitle === albumTitle) {
         album.push(albums[i]);
@@ -22,7 +22,7 @@ exports.getOne = function (albumTitle) {
     return album;
 }
 
-exports.deleteOne = function (albumTitle) {
+exports.deleteOne =  (albumTitle) => {
     let album = [];
     for (let i = 0; i < albumTitle.length; i++) {
         if (albums[i].albumTitle !== albumTitle) {
@@ -31,10 +31,4 @@ exports.deleteOne = function (albumTitle) {
     }
     console.log("Deleting " + albumTitle + " from the list");
     return album;
-}
-
-exports.deleteOneV2 = function (albumTitle) {
-    return albums.filter(function(data) {
-        return data.albumTitle !== albumTitle;
-    })
 }

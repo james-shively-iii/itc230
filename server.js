@@ -1,6 +1,7 @@
-const http = require("http");
-const fs = require("fs");
-const albums = require("./albums");
+const http = require('http');
+const fs = require('fs');
+const albums = require('./albums');
+const querystring = require('qs');
 
 function serveStatic(res, path, contentType, responseCode) {
   if(!responseCode) responseCode = 200;
@@ -18,23 +19,26 @@ function serveStatic(res, path, contentType, responseCode) {
 }
 
 http.createServer((req,res) => {
-  console.log("Create server");    
+  console.log('Create server');    
   const path = req.url.toLowerCase();
   switch(path) {
     case '/':
-      fs.readFile("public/home.html", (err, data) => {
+      fs.readFile('public/home.html', (err, data) => {
         if (err) return console.error(err);
         res.writeHead(200, {'Content-Type': 'text/html'} );
         res.end(data.toString());
       });
       break;
     case '/about':
-      fs.readFile("public/about.html", (err, data) => {
+      fs.readFile('public/about.html', (err, data) => {
         if (err) return console.error(err);
         res.writeHead(200, {'Content-Type': 'text/html'} );
         res.end(data.toString());
       });
       break;
+    case '/get':
+      // return info for requested album
+      qs.parse();
     default:
       res.writeHead(404, {'Content-Type': 'text/plain'} );
       res.end('You must have took a wrong turn');
@@ -44,4 +48,4 @@ http.createServer((req,res) => {
     console.log(albums.getAll());
 
 }).listen(process.env.PORT || 3000);
-console.log("Server created");
+console.log('Server created');
