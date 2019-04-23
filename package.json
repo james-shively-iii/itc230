@@ -2,9 +2,12 @@
   "name": "itc230",
   "version": "1.0.0",
   "description": "itc230 - advanced javascript (node app development)",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
-    "express": "^4.16.4",
+    "body-parser": "file:node_modules/body-parser",
+    "express": "file:node_modules/express",
+    "express-generator": "^4.16.0",
+    "express-handlebars": "file:node_modules/express-handlebars",
     "howler": "^2.1.1",
     "lodash": "^4.17.11"
   },

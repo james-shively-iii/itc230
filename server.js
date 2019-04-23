@@ -32,8 +32,13 @@ http.createServer((req,res) => {
       break;
     // Create the 'delete' method to delete array values
     case '/delete':
+      let result = albums.delete(query.albumTitle);
       res.writeHead(200, {'Content-Type': 'text/plain'});
-      res.end('delete');
+      if(result >= 0) {
+        res.end(`Deleted: ${result} - ` + query.albumTitle); 
+      } else {
+        res.end("Item was not found, deletion failed");
+      }
       break;
       
     default:
