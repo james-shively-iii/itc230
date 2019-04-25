@@ -1,4 +1,4 @@
-var albums = [
+let albums = [
     {albumTitle: 'L\'appel du Vide', seriesTitle: 'Chronicles of Sado: Chapter One', tracks: 'Five'},
     {albumTitle: 'Suppressed Aggression', seriesTitle: 'Chronicles of Sado: Chapter Two', tracks: 'Five'},
     {albumTitle: 'untitled', seriesTitle: 'Chronicles of Sado: Chapter Three', tracks: 'Five'},
@@ -12,32 +12,16 @@ exports.getAll = () =>  {
     return albums;
 }
   
-<<<<<<< HEAD
-exports.getOne = (albumTitle) => {
-    let  album = [];
-=======
-exports.get = function (albumTitle) {
-    var  album = [];
->>>>>>> d85501fc8f93a469b9337909353f8c07997c2810
-    for (let i = 0; i < albums.length; i++) {
-        if (albums[i].albumTitle === albumTitle) {
-            album.push(albums[i]);
-        }
-    }
-    return album;
+exports.get = (albumTitle) => {
+    return albums.find((album) => {
+        return album.albumTitle == albumTitle;
+      });
 }
 
-<<<<<<< HEAD
-exports.deleteOne =  (albumTitle) => {
-=======
-exports.delete = function (albumTitle) {
->>>>>>> d85501fc8f93a469b9337909353f8c07997c2810
-    let album = [];
-    for (let i = 0; i < albumTitle.length; i++) {
-        if (albums[i].albumTitle !== albumTitle) {
-            album.push(albums[i]);
-        }
-    }
-    console.log("Deleting " + albumTitle + " from the list");
-    return album;
+exports.delete = (albumTitle) => {
+    let foundIndex = albums.findIndex((album) => {
+        return album.albumTitle === albumTitle;
+    });
+    albums.splice(foundIndex, 1);
+    return foundIndex;
 }
