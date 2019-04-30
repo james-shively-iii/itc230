@@ -4,17 +4,26 @@
   "description": "itc230 - advanced javascript (node app development)",
   "main": "server.js",
   "dependencies": {
-    "body-parser": "file:node_modules/body-parser",
-    "express": "file:node_modules/express",
-    "express-generator": "^4.16.0",
-    "express-handlebars": "file:node_modules/express-handlebars",
-    "howler": "^2.1.1",
-    "lodash": "^4.17.11"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "helmet": "^3.16.0",
+    "nodemon": "^1.18.11",
+    "serve-favicon": "^2.5.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "mocha": "^6.1.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "debug": "set DEBUG=express:* & nodemon ./server.js --exec babel-node -e js",
+    "lint": "eslint **/*.js",
+    "test": "mocha test/**",
+    "start": "nodemon ./server.js --exec babel-node -e js"
   },
   "repository": {
     "type": "git",

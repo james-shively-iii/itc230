@@ -1,51 +1,73 @@
-const http = require('http');
-const fs = require('fs');
-const qs = require('querystring')
+import express from 'express';
+import path from 'path';
+
+'use strict'
+//      CONSTANTS AND VARIABLES         \\
+const helm = require('helmet');
+const ex = require('express');
+const bp = require('body-parser');
+const app = ex();
+const P = 3000;
 const albums = require('./albums');
+let hb = require('express-handlebars');
+//      INVOKE HANDLEBAR TEMPLATES      \\
+app.engine('.html', hb({ extname: '.html' }));
+app.set('view engine', '.html');
 
-http.createServer((req,res) => {
-  console.log("Create server");
-  let url = req.url.split("?"); 
-  let query = qs.parse(url[1]); 
-  const path = url[0].toLowerCase();   
-  switch(path) {
-    case '/':
-      fs.readFile("public/home.html", (err, data) => {
-        if (err) return console.error(err);
-        res.writeHead(200, {'Content-Type': 'text/html'} );
-        res.end(data.toString());
-      });
-      break;
-    case '/about':
-      fs.readFile("public/about.html", (err, data) => {
-        if (err) return console.error(err);
-        res.writeHead(200, {'Content-Type': 'text/html'} );
-        res.end(data.toString());
-      });
-      break;
-    // Create the 'get' method to return array values
-    case '/get':
-      let find = albums.get(query.albumTitle);
-      res.writeHead(200, {'Content-Type': 'text/plain'});
-      let returned = (find) ? JSON.stringify(find) : "Missing data";
-      res.end('Returned values: ' + query.albumTitle + "\n" + returned);
-      break;
-    // Create the 'delete' method to delete array values
-    case '/delete':
-      let result = albums.delete(query.albumTitle);
-      res.writeHead(200, {'Content-Type': 'text/plain'});
-      if(result >= 0) {
-        res.end(`Deleted: ${result} - ` + query.albumTitle); 
-      } else {
-        res.end("Item was not found, deletion failed");
-      }
-      break;
-      
-    default:
-      res.writeHead(404, {'Content-Type': 'text/plain'} );
-      res.end('You must have took a wrong turn');
-      break;
-    }
+//      CREATE SERVER                   \\
+app.set('port', process.env.P || P);
 
-}).listen(process.env.PORT || 3000);
-console.log("Server created");
+//      HELMET FOR SECURITY             \\
+app.use(helm());
+
+//      STATIC DIRECTORY                \\
+app.use(ex.static(__dirname + '/public'));
+
+//      PARSE FORM SUBMISSIONS          \\
+app.use(bp.urlencoded({ extended:true }));
+
+//      SENDING STATIC FILES            \\
+app.get('/', (req,res) => {
+    res.type('text/html')
+    res.sendFile(__dirname + '/public/home.html')
+});
+app.get('/about', (req,res) => {
+    res.type('text/html')
+    res.sendFile(__dirname + '/public/about.html')
+});
+
+//      404 ERROR HANDLER               \\
+app.use((req,res) => {
+    res.type('text/plain')
+    res.status(404)
+    res.send('404 ERROR: You took the wrong left turn...now meet your demise!!!')
+});
+
+//      QUERY & FORMS                   \\
+// app.route('/get')
+//     .get((req,res) => {
+//         console.log(req.query)
+//         res.send('here lies my hopes')
+//     })
+//     .post((req,res) => 
+//         console.log(req.body)
+// );
+// app.get('/get', (req,res) => {
+//     console.log(req.query)
+//     res.send('here lies my hopes')
+// });
+
+//      RENDER METHOD                   \\
+// send content of 'home' view
+app.get('/', (req,res) => {
+    res.render('home')
+});
+app.get('/get', (req,res) => {
+    let result = albums.get(req.query.albumTitle)
+    res.render('details', { albumTitle: req.query.albumTitle, result: result})
+});
+
+
+app.listen(P, () => {
+    console.log(`Server created at port ${P}`)
+});
