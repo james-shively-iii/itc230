@@ -66,8 +66,23 @@ app.use((req,res) => {
 // });
 
 //      RENDER METHOD                   \\
+// render item addition
+app.add('/add', (req,res) => {
+    // adding item
+    let result = albums.get(query.albumTitle)
+    let imp = albums.add(query.albumTitle)
+    // if statement to stop redundancies
+    if(result = result) {
+        // if result equals an album in the list
+        res.render('This addition is redundant')
+    } else {
+        // otherwise, add it
+        res.send(imp)
+        res.render(`${result} has been added to the list`);
+    }
+});
 // render item deletion 
-app.get('/delete', function(req,res){
+app.get('/delete', (req,res) => {
     // look for the item and grab it
     let result = albums.delete(query.albumTitle); 
     // take that item and delete it

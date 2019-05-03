@@ -21,8 +21,8 @@
   },
   "scripts": {
     "debug": "set DEBUG=express:* & nodemon ./server.js --exec babel-node -e js",
-    "lint": "eslint **/*.js",
-    "test": "mocha test/**",
+    "lint": "eslint /*.js",
+    "test": "mocha test/",
     "start": "nodemon ./server.js --exec babel-node -e js"
   },
   "repository": {
