@@ -67,7 +67,7 @@ app.use((req,res) => {
 
 //      RENDER METHOD                   \\
 // render item deletion 
-app.get('/delete', function(req,res){
+app.get('/delete', (req,res) => {
     // look for the item and grab it
     let result = albums.delete(query.albumTitle); 
     // take that item and delete it
