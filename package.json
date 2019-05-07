@@ -6,17 +6,36 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
+<<<<<<< HEAD
     "express-handlebars": "^3.0.2"
   },
   "devDependencies": {
+=======
+    "express-handlebars": "^3.0.2",
+    "helmet": "^3.16.0",
+    "nodemon": "^1.18.11",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+>>>>>>> f8fecb742d436b81f95e3768bbcbd4a96559bf30
     "chai": "^4.2.0",
     "eslint": "^5.16.0",
     "mocha": "^6.1.4"
   },
   "scripts": {
+<<<<<<< HEAD
     "lint": "eslint **/*.js",
     "test": "mocha test/**",
     "start": "node server.js"
+=======
+    "debug": "set DEBUG=express:* & nodemon ./server.js --exec babel-node -e js",
+    "lint": "eslint /*.js",
+    "test": "mocha test/",
+    "start": "nodemon ./server.js --exec babel-node -e js"
+>>>>>>> f8fecb742d436b81f95e3768bbcbd4a96559bf30
   },
   "repository": {
     "type": "git",

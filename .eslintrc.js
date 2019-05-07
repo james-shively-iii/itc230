@@ -11,7 +11,11 @@ module.exports = {
         "SharedArrayBuffer": "readonly"
     },
     "parserOptions": {
+<<<<<<< HEAD
         "ecmaVersion": 2018,
+=======
+        "ecmaVersion": 6,
+>>>>>>> f8fecb742d436b81f95e3768bbcbd4a96559bf30
         "sourceType": "module"
     },
     "rules": {
@@ -198,7 +202,11 @@ module.exports = {
         "no-useless-constructor": "error",
         "no-useless-rename": "error",
         "no-useless-return": "error",
+<<<<<<< HEAD
         "no-var": "error",
+=======
+        "no-var": "warn",
+>>>>>>> f8fecb742d436b81f95e3768bbcbd4a96559bf30
         "no-void": "error",
         "no-warning-comments": "error",
         "no-whitespace-before-property": "error",
@@ -217,7 +225,11 @@ module.exports = {
         "operator-linebreak": "error",
         "padded-blocks": "off",
         "padding-line-between-statements": "error",
+<<<<<<< HEAD
         "prefer-arrow-callback": "error",
+=======
+        "prefer-arrow-callback": "warn",
+>>>>>>> f8fecb742d436b81f95e3768bbcbd4a96559bf30
         "prefer-const": "off",
         "prefer-destructuring": "error",
         "prefer-named-capture-group": "error",

@@ -1,0 +1,12 @@
+<html>
+<body>
+  <h2>Details for {{albumTitle}}</h2>
+  {{#if result}}
+    <li>Album Title: {{ result.albumTitle }}
+    <li>Series Title: {{ result.seriesTitle }}
+    <li>Amount of Tracks: {{ result.tracks }}
+  {{else}}
+    not found
+  {{/if}}
+</body>
+</html> 

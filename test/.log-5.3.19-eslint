@@ -1,0 +1,646 @@
+itc230@1.0.0 lint C:\Users\James Shively III\Documents\GitHub\itc230
+> eslint **/*.js
+
+
+C:\Users\James Shively III\Documents\GitHub\itc230\albums.js
+   2:1    error  Line 2 exceeds the maximum line length of 80
+                                       max-len
+   2:6    error  Unquoted property 'albumTitle' found
+                                       quote-props
+   2:38   error  Unquoted property 'seriesTitle' found
+                                       quote-props
+   2:38   error  Object properties must go on a new line
+                                       object-property-newline
+   2:86   error  Object properties must go on a new line
+                                       object-property-newline
+   2:86   error  Unquoted property 'tracks' found
+                                       quote-props
+   3:1    error  Line 3 exceeds the maximum line length of 80
+                                       max-len
+   3:6    error  Unquoted property 'albumTitle' found
+                                       quote-props
+   3:43   error  Object properties must go on a new line
+                                       object-property-newline
+   3:43   error  Unquoted property 'seriesTitle' found
+                                       quote-props
+   3:91   error  Unquoted property 'tracks' found
+                                       quote-props
+   3:91   error  Object properties must go on a new line
+                                       object-property-newline
+   4:1    error  Line 4 exceeds the maximum line length of 80
+                                       max-len
+   4:6    error  Unquoted property 'albumTitle' found
+                                       quote-props
+   4:30   error  Unquoted property 'seriesTitle' found
+                                       quote-props
+   4:30   error  Object properties must go on a new line
+                                       object-property-newline
+   4:80   error  Object properties must go on a new line
+                                       object-property-newline
+   4:80   error  Unquoted property 'tracks' found
+                                       quote-props
+   5:1    error  Line 5 exceeds the maximum line length of 80
+                                       max-len
+   5:6    error  Unquoted property 'albumTitle' found
+                                       quote-props
+   5:78   error  Unquoted property 'seriesTitle' found
+                                       quote-props
+   5:78   error  Object properties must go on a new line
+                                       object-property-newline
+   5:121  error  Unquoted property 'tracks' found
+                                       quote-props
+   5:121  error  Object properties must go on a new line
+                                       object-property-newline
+   6:1    error  Line 6 exceeds the maximum line length of 80
+                                       max-len
+   6:6    error  Unquoted property 'albumTitle' found
+                                       quote-props
+   6:35   error  Unquoted property 'seriesTitle' found
+                                       quote-props
+   6:35   error  Object properties must go on a new line
+                                       object-property-newline
+   6:84   error  Object properties must go on a new line
+                                       object-property-newline
+   6:84   error  Unquoted property 'tracks' found
+                                       quote-props
+   7:1    error  Line 7 exceeds the maximum line length of 80
+                                       max-len
+   7:6    error  Unquoted property 'albumTitle' found
+                                       quote-props
+   7:53   error  Object properties must go on a new line
+                                       object-property-newline
+   7:53   error  Unquoted property 'seriesTitle' found
+                                       quote-props
+   7:101  error  Object properties must go on a new line
+                                       object-property-newline
+   7:101  error  Unquoted property 'tracks' found
+                                       quote-props
+   8:1    error  Line 8 exceeds the maximum line length of 80
+                                       max-len
+   8:6    error  Unquoted property 'albumTitle' found
+                                       quote-props
+   8:57   error  Object properties must go on a new line
+                                       object-property-newline
+   8:57   error  Unquoted property 'seriesTitle' found
+                                       quote-props
+   8:100  error  Unquoted property 'tracks' found
+                                       quote-props
+   8:100  error  Object properties must go on a new line
+                                       object-property-newline
+  11:24   error  Unexpected block statement surrounding arrow body; move the returned value immediately after the `=>`  arrow-body-style
+  15:31   error  Unexpected block statement surrounding arrow body; move the returned value immediately after the `=>`  arrow-body-style
+  16:35   error  Unexpected block statement surrounding arrow body; move the returned value immediately after the `=>`  arrow-body-style
+  17:33   error  Expected '===' and instead saw '=='
+                                       eqeqeq
+  21:18   error  Unexpected unnamed function
+                                       func-names
+  22:50   error  Unexpected block statement surrounding arrow body; move the returned value immediately after the `=>`  arrow-body-style
+  26:5    error  Expected newline before return statement
+                                       newline-before-return
+
+C:\Users\James Shively III\Documents\GitHub\itc230\exercises\ch3\ask.js
+   1:1   warning  Unexpected var, use let or const instead          no-var
+   7:1   warning  Unexpected var, use let or const instead          no-var
+   9:1   error    Expected a function expression                    func-style
+   9:1   error    Missing JSDoc comment                             require-jsdoc   9:13  error    Missing space before function parentheses         space-before-function-paren
+   9:14  error    Identifier name 'i' is too short (< 2)            id-length
+  20:9   error    Don't use process.exit(); throw an error instead  no-process-exit
+  25:1   error    Line 25 exceeds the maximum line length of 80     max-len
+
+C:\Users\James Shively III\Documents\GitHub\itc230\exercises\ch4\alwaysTalking.js   4:1  error  Line 4 exceeds the maximum line length of 80      max-len
+  12:9  error  Identifier name 'i' is too short (< 2)            id-length
+  17:5  error  Unexpected console statement                      no-console
+  19:5  error  Don't use process.exit(); throw an error instead  no-process-exit
+
+C:\Users\James Shively III\Documents\GitHub\itc230\exercises\ch4\bf.js
+   1:1   error    Expected a block comment instead of consecutive line comments
+multiline-comment-style
+   5:1   error    Comments should not begin with a lowercase character
+capitalized-comments
+   6:1   error    Comments should not begin with a lowercase character
+capitalized-comments
+   7:1   error    Comments should not begin with a lowercase character
+capitalized-comments
+   8:1   error    Comments should not begin with a lowercase character
+capitalized-comments
+  11:1   error    Comments should not begin with a lowercase character
+capitalized-comments
+  13:1   error    Comments should not begin with a lowercase character
+capitalized-comments
+  15:1   error    Comments should not begin with a lowercase character
+capitalized-comments
+  16:1   error    Comments should not begin with a lowercase character
+capitalized-comments
+  19:1   error    Comments should not begin with a lowercase character
+capitalized-comments
+  23:1   error    Expected a block comment instead of consecutive line comments
+multiline-comment-style
+  26:1   warning  Unexpected var, use let or const instead
+no-var
+  28:1   warning  Unexpected var, use let or const instead
+no-var
+  29:1   warning  Unexpected var, use let or const instead
+no-var
+  31:17  error    Unexpected unnamed function
+func-names
+  31:25  error    Missing space before function parentheses
+space-before-function-paren
+  32:5   error    Unexpected console statement
+no-console
+  32:20  error    Unexpected 'this'
+no-invalid-this
+  35:17  error    Unexpected unnamed function
+func-names
+  35:25  error    Missing space before function parentheses
+space-before-function-paren
+  36:5   error    Unexpected console statement
+no-console
+  36:20  error    Unexpected 'this'
+no-invalid-this
+  42:1   error    Expected a block comment instead of consecutive line comments
+multiline-comment-style
+
+C:\Users\James Shively III\Documents\GitHub\itc230\exercises\ch4\exec.js
+  1:5  error  Use object destructuring      prefer-destructuring
+  7:5  error  Unexpected console statement  no-console
+  8:5  error  Unexpected console statement  no-console
+
+C:\Users\James Shively III\Documents\GitHub\itc230\exercises\ch4\lib\Person.js
+  1:1   warning  Unexpected var, use let or const instead   no-var
+  1:5   error    Use object destructuring                   prefer-destructuring
+  2:1   warning  Unexpected var, use let or const instead   no-var
+  3:1   warning  Unexpected var, use let or const instead   no-var
+  3:14  error    Unexpected unnamed function                func-names
+  3:22  error    Missing space before function parentheses  space-before-function-paren
+
+C:\Users\James Shively III\Documents\GitHub\itc230\exercises\ch4\promptPerson.js
+   4:5  error  Unquoted property 'name' found                 quote-props
+   5:5  error  Unquoted property 'sayings' found              quote-props
+  19:1  error  Line 19 exceeds the maximum line length of 80  max-len
+  26:1  error  Line 26 exceeds the maximum line length of 80  max-len
+  26:5  error  Unexpected console statement                   no-console
+
+C:\Users\James Shively III\Documents\GitHub\itc230\exercises\ch4\spawn.js
+   1:5  error  Use object destructuring                          prefer-destructuring
+   6:5  error  Unexpected console statement                      no-console
+  10:5  error  Unexpected console statement                      no-console
+  12:5  error  Don't use process.exit(); throw an error instead  no-process-exit
+
+C:\Users\James Shively III\Documents\GitHub\itc230\exercises\ch4\timers.js
+   6:1   error  Expected a function expression             func-style
+   6:1   error  Missing JSDoc comment                      require-jsdoc
+   6:29  error  Missing space before function parentheses  space-before-function-paren
+   6:30  error  Identifier name 'p' is too short (< 2)     id-length
+  14:44  error  Operator '/' must be spaced                space-infix-ops
+  21:5   error  Unexpected console statement               no-console
+
+C:\Users\James Shively III\Documents\GitHub\itc230\exercises\ch5\create.js
+  16:38  error  Expected error to be handled     handle-callback-err
+  16:39  error  'err' is defined but never used  no-unused-vars
+  17:5   error  Unexpected console statement     no-console
+
+C:\Users\James Shively III\Documents\GitHub\itc230\exercises\ch5\lib\script\alwaysTalking.js
+   4:1  error  Line 4 exceeds the maximum line length of 80      max-len
+  12:9  error  Identifier name 'i' is too short (< 2)            id-length
+  17:5  error  Unexpected console statement                      no-console
+  19:5  error  Don't use process.exit(); throw an error instead  no-process-exit
+
+C:\Users\James Shively III\Documents\GitHub\itc230\exercises\ch5\lib\script\spawn.js
+   1:5  error  Use object destructuring                          prefer-destructuring
+   6:5  error  Unexpected console statement                      no-console
+  10:5  error  Unexpected console statement                      no-console
+  12:5  error  Don't use process.exit(); throw an error instead  no-process-exit
+
+C:\Users\James Shively III\Documents\GitHub\itc230\exercises\ch5\list.js
+   7:5  error  Unexpected console statement  no-console
+  10:1  error  Unexpected console statement  no-console
+
+C:\Users\James Shively III\Documents\GitHub\itc230\exercises\ch5\promptPerson.js
+   6:5  error  Unquoted property 'name' found                 quote-props
+   7:5  error  Unquoted property 'sayings' found              quote-props
+  13:1  error  Line 13 exceeds the maximum line length of 80  max-len
+  13:5  error  Unexpected sync method: 'writeFileSync'        no-sync
+  26:1  error  Line 26 exceeds the maximum line length of 80  max-len
+  33:1  error  Line 33 exceeds the maximum line length of 80  max-len
+  33:5  error  Unexpected console statement                   no-console
+
+C:\Users\James Shively III\Documents\GitHub\itc230\exercises\ch5\read.js
+   3:21  error  Expected error to be handled                  handle-callback-err   6:21  error  Unexpected sync method: 'statSync'            no-sync
+   8:40  error  Expected error to be handled                  handle-callback-err   8:41  error  'err' is already declared in the upper scope  no-shadow
+   9:17  error  Unexpected console statement                  no-console
+  11:10  error  Unnecessary semicolon                         no-extra-semi
+  14:1   error  Newline not allowed at end of file            eol-last
+
+C:\Users\James Shively III\Documents\GitHub\itc230\server.js
+   1:8   error    'express' is defined but never used
+                   no-unused-vars
+   2:8   error    'path' is defined but never used
+                   no-unused-vars
+   4:1   error    Expected an assignment or function call and instead saw an expression             no-unused-expressions
+   6:49  error    Multiple spaces found before '// helmet for ...'
+                   no-multi-spaces
+   6:49  error    Unexpected comment inline with code
+                   no-inline-comments
+   6:49  error    Comments should not begin with a lowercase character
+                   capitalized-comments
+   6:49  error    Expected comment to be above code
+                   line-comment-position
+   7:49  error    Comments should not begin with a lowercase character
+                   capitalized-comments
+   7:49  error    Unexpected comment inline with code
+                   no-inline-comments
+   7:49  error    Multiple spaces found before '// express fra...'
+                   no-multi-spaces
+   7:49  error    Expected comment to be above code
+                   line-comment-position
+   8:49  error    Unexpected comment inline with code
+                   no-inline-comments
+   8:49  error    Expected comment to be above code
+                   line-comment-position
+   8:49  error    Multiple spaces found before '// body parser...'
+                   no-multi-spaces
+   8:49  error    Comments should not begin with a lowercase character
+                   capitalized-comments
+   9:1   error    Line 9 exceeds the maximum line length of 80
+                   max-len
+   9:49  error    Multiple spaces found before '// placing exp...'
+                   no-multi-spaces
+   9:49  error    Unexpected comment inline with code
+                   no-inline-comments
+   9:49  error    Comments should not begin with a lowercase character
+                   capitalized-comments
+   9:49  error    Expected comment to be above code
+                   line-comment-position
+  10:7   error    Identifier name 'P' is too short (< 2)
+                   id-length
+  10:49  error    Multiple spaces found before '// P is for PO...'
+                   no-multi-spaces
+  10:49  error    Unexpected comment inline with code
+                   no-inline-comments
+  10:49  error    Expected comment to be above code
+                   line-comment-position
+  11:1   error    Line 11 exceeds the maximum line length of 80
+                   max-len
+  11:49  error    Multiple spaces found before '// invoking th...'
+                   no-multi-spaces
+  11:49  error    Comments should not begin with a lowercase character
+                   capitalized-comments
+  11:49  error    Expected comment to be above code
+                   line-comment-position
+  11:49  error    Unexpected comment inline with code
+                   no-inline-comments
+  12:49  error    Comments should not begin with a lowercase character
+                   capitalized-comments
+  12:49  error    Multiple spaces found before '// express tem...'
+                   no-multi-spaces
+  12:49  error    Expected comment to be above code
+                   line-comment-position
+  12:49  error    Unexpected comment inline with code
+                   no-inline-comments
+  15:24  error    There should be no space after '{'
+                   object-curly-spacing
+  15:26  error    Unquoted property 'extname' found
+                   quote-props
+  15:43  error    There should be no space before '}'
+                   object-curly-spacing
+  25:19  error    Use path.join() or path.resolve() instead of + to create paths
+                   no-path-concat
+  28:23  error    There should be no space after '{'
+                   object-curly-spacing
+  28:25  error    Unquoted property 'extended' found
+                   quote-props
+  28:34  error    Missing space before value for key 'extended'
+                   key-spacing
+  28:39  error    There should be no space before '}'
+                   object-curly-spacing
+  32:5   error    Comments should not begin with a lowercase character
+                   capitalized-comments
+  34:5   error    Comments should not begin with a lowercase character
+                   capitalized-comments
+  35:18  error    Use path.join() or path.resolve() instead of + to create paths
+                   no-path-concat
+  38:5   error    Comments should not begin with a lowercase character
+                   capitalized-comments
+  40:5   error    Comments should not begin with a lowercase character
+                   capitalized-comments
+  46:5   error    Comments should not begin with a lowercase character
+                   capitalized-comments
+  48:5   error    Comments should not begin with a lowercase character
+                   capitalized-comments
+  50:5   error    Comments should not begin with a lowercase character
+                   capitalized-comments
+  51:1   error    Line 51 exceeds the maximum line length of 80
+                   max-len
+  54:1   error    Expected a block comment instead of consecutive line comments
+                   multiline-comment-style
+  55:1   error    Comments should not begin with a lowercase character
+                   capitalized-comments
+  57:1   error    Comments should not begin with a lowercase character
+                   capitalized-comments
+  58:1   error    Comments should not begin with a lowercase character
+                   capitalized-comments
+  61:1   error    Comments should not begin with a lowercase character
+                   capitalized-comments
+  63:1   error    Comments should not begin with a lowercase character
+                   capitalized-comments
+  64:1   error    Comments should not begin with a lowercase character
+                   capitalized-comments
+  65:1   error    Comments should not begin with a lowercase character
+                   capitalized-comments
+  68:1   error    Expected a block comment instead of consecutive line comments
+                   multiline-comment-style
+  69:1   error    Comments should not begin with a lowercase character
+                   capitalized-comments
+  70:20  warning  Unexpected function expression
+                   prefer-arrow-callback
+  70:20  error    Unexpected unnamed function
+                   func-names
+  70:28  error    Missing space before function parentheses
+                   space-before-function-paren
+  70:37  error    Missing space before opening brace
+                   space-before-blocks
+  71:5   error    Comments should not begin with a lowercase character
+                   capitalized-comments
+  72:32  error    'query' is not defined
+                   no-undef
+  73:5   error    Comments should not begin with a lowercase character
+                   capitalized-comments
+  74:27  error    Unquoted property 'title' found
+                   quote-props
+  74:56  error    Object properties must go on a new line
+                   object-property-newline
+  74:56  error    Expected object keys to be in ascending order. 'result' should
+be before 'title'  sort-keys
+  74:56  error    Expected property shorthand
+                   object-shorthand
+  74:56  error    Unquoted property 'result' found
+                   quote-props
+  76:1   error    Comments should not begin with a lowercase character
+                   capitalized-comments
+  78:5   error    Unexpected console statement
+                   no-console
+  79:5   error    Comments should not begin with a lowercase character
+                   capitalized-comments
+  80:9   error    'header' is assigned a value but never used
+                   no-unused-vars
+  81:5   error    Comments should not begin with a lowercase character
+                   capitalized-comments
+  83:5   error    Comments should not begin with a lowercase character
+                   capitalized-comments
+  84:27  error    There should be no space after '{'
+                   object-curly-spacing
+  84:29  error    Unquoted property 'albumTitle' found
+                   quote-props
+  84:62  error    Object properties must go on a new line
+                   object-property-newline
+  84:62  error    Unquoted property 'result' found
+                   quote-props
+  89:5   error    Unexpected console statement
+                   no-console
+
+C:\Users\James Shively III\Documents\GitHub\itc230\service.js
+    4:1   error  Imports should be sorted alphabetically
+  sort-imports
+   12:1   error  Comments should not begin with a lowercase character
+  capitalized-comments
+   17:1   error  Comments should not begin with a lowercase character
+  capitalized-comments
+   17:1   error  Expected a block comment instead of consecutive line comments
+  multiline-comment-style
+   18:1   error  Expected space or tab after '//' in comment
+  spaced-comment
+   18:1   error  Comments should not begin with a lowercase character
+  capitalized-comments
+   19:28  error  There should be no space after '{'
+  object-curly-spacing
+   19:30  error  Unquoted property 'extended' found
+  quote-props
+   19:39  error  Missing space before value for key 'extended'
+  key-spacing
+   19:44  error  There should be no space before '}'
+  object-curly-spacing
+   26:3   error  Comments should not begin with a lowercase character
+  capitalized-comments
+   30:1   error  Expected a block comment instead of consecutive line comments
+  multiline-comment-style
+   33:1   error  Comments should not begin with a lowercase character
+  capitalized-comments
+   36:3   error  Unexpected console statement
+  no-console
+   43:3   error  Comments should not begin with a lowercase character
+  capitalized-comments
+   43:3   error  Expected a block comment instead of consecutive line comments
+  multiline-comment-style
+   44:3   error  Comments should not begin with a lowercase character
+  capitalized-comments
+   45:3   error  Unexpected console statement
+  no-console
+   47:3   error  Unexpected console statement
+  no-console
+   48:3   error  Unexpected console statement
+  no-console
+   49:3   error  Comments should not begin with a lowercase character
+  capitalized-comments
+   50:3   error  Unexpected console statement
+  no-console
+   51:3   error  Unexpected console statement
+  no-console
+   52:3   error  Comments should not begin with a lowercase character
+  capitalized-comments
+   56:5   error  'req' is defined but never used
+  no-unused-vars
+   56:9   error  'res' is defined but never used
+  no-unused-vars
+   56:17  error  Unexpected console statement
+  no-console
+   58:2   error  Expected a block comment instead of consecutive line comments
+  multiline-comment-style
+   58:2   error  Expected space or tab after '//' in comment
+  spaced-comment
+   62:3   error  Expected space or tab after '//' in comment
+  spaced-comment
+   62:3   error  Expected a block comment instead of consecutive line comments
+  multiline-comment-style
+   63:3   error  Comments should not begin with a lowercase character
+  capitalized-comments
+   63:3   error  Expected space or tab after '//' in comment
+  spaced-comment
+   64:3   error  Expected space or tab after '//' in comment
+  spaced-comment
+   64:3   error  Comments should not begin with a lowercase character
+  capitalized-comments
+   66:1   error  Expected space or tab after '//' in comment
+  spaced-comment
+   68:2   error  Expected space or tab after '//' in comment
+  spaced-comment
+   68:2   error  Expected a block comment instead of consecutive line comments
+  multiline-comment-style
+   71:3   error  Expected dot to be on same line as object
+  dot-location
+   71:9   error  'req' is defined but never used
+  no-unused-vars
+   71:13  error  'res' is defined but never used
+  no-unused-vars
+   73:5   error  Expected space or tab after '//' in comment
+  spaced-comment
+   73:5   error  Comments should not begin with a lowercase character
+  capitalized-comments
+   73:5   error  Expected a block comment instead of consecutive line comments
+  multiline-comment-style
+   74:5   error  Expected space or tab after '//' in comment
+  spaced-comment
+   75:5   error  Expected space or tab after '//' in comment
+  spaced-comment
+   75:5   error  Comments should not begin with a lowercase character
+  capitalized-comments
+   76:5   error  Expected space or tab after '//' in comment
+  spaced-comment
+   76:5   error  Comments should not begin with a lowercase character
+  capitalized-comments
+   78:3   error  Expected dot to be on same line as object
+  dot-location
+   79:5   error  Expected no linebreak before this expression
+  implicit-arrow-linebreak
+   80:3   error  Unexpected newline before '('
+  function-paren-newline
+   81:3   error  Expected dot to be on same line as object
+  dot-location
+   82:5   error  Expected no linebreak before this expression
+  implicit-arrow-linebreak
+   83:1   error  Unexpected newline before '('
+  function-paren-newline
+   84:1   error  Expected space or tab after '//' in comment
+  spaced-comment
+   87:22  error  'next' is defined but never used
+  no-unused-vars
+   87:28  error  Arrow function has too many parameters (4). Maximum allowed is 3  max-params
+   88:3   error  Unexpected console statement
+  no-console
+   94:3   error  Unexpected console statement
+  no-console
+   96:1   error  More than 2 blank lines not allowed
+  no-multiple-empty-lines
+   99:1   error  Expected a block comment instead of consecutive line comments
+  multiline-comment-style
+   99:1   error  Expected space or tab after '//' in comment
+  spaced-comment
+  103:1   error  Comments should not begin with a lowercase character
+  capitalized-comments
+  103:1   error  Expected a linebreak after '/*'
+  multiline-comment-style
+  104:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  105:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  106:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  107:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  108:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  109:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  110:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  111:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  112:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  113:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  114:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  115:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  116:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  117:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  118:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  119:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  120:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  121:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  122:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  123:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  124:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  125:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  126:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  127:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  128:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  129:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  130:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  131:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  132:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  133:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  134:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  135:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  136:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  137:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  138:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  139:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  140:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  141:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  142:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  143:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  144:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  145:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  146:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  147:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  148:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  149:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  150:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  151:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  152:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  153:1   error  Expected a '*' at the start of this line
+  multiline-comment-style
+  153:32  error  Expected a linebreak before '*/'
+  multiline-comment-style
+
+✖ 334 problems (325 errors, 9 warnings)
+  220 errors and 9 warnings potentially fixable with the `--fix` option.
+
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! itc230@1.0.0 lint: `eslint **/*.js`
+npm ERR! Exit status 1
+npm ERR!
+npm ERR! Failed at the itc230@1.0.0 lint script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\James Shively III\AppData\Roaming\npm-cache\_logs\2019-05-03T21_12_52_417Z-debug.log

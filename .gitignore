@@ -1,3 +1,14 @@
 node_modules
 exercises
+<<<<<<< HEAD
 express-app
+=======
+express-app
+data
+images
+readme.txt
+public/favicon.ico
+public/imagetent.jpg
+images
+index.js
+>>>>>>> f8fecb742d436b81f95e3768bbcbd4a96559bf30
