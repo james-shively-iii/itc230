@@ -5,17 +5,17 @@ let albums = [
     {albumTitle: 'The Era of Artificial Intelligence and Organic Idiocracy', seriesTitle: 'The Socio-Political Series', tracks: 'Thirteen'},
     {albumTitle: 'Overmedicated', seriesTitle: 'Chronicles of Sado: Chapter Four', tracks: 'Five'},
     {albumTitle: 'Chronicles of Sado (remastered)', seriesTitle: 'Chronicles of Sado: Chapter 1-4', tracks: 'Twenty'},
-    {albumTItle: 'Odis Mills Presents: Socialist Slim', seriesTitle: 'The Socio-Political Series', tracks: 'Eighteen'}
+    {albumTitle: 'Odis Mills Presents: Socialist Slim', seriesTitle: 'The Socio-Political Series', tracks: 'Eighteen'}
 ];
 
-exports.getAll = () =>  {
+exports.getAll = () => {
     return albums;
 }
   
 exports.get = (albumTitle) => {
     return albums.find((album) => {
         return album.albumTitle == albumTitle;
-      });
+    });
 }
 
 exports.delete = (albumTitle) => {
@@ -24,4 +24,4 @@ exports.delete = (albumTitle) => {
     });
     albums.splice(foundIndex, 1);
     return foundIndex;
-}
+};

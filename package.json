@@ -2,15 +2,20 @@
   "name": "itc230",
   "version": "1.0.0",
   "description": "itc230 - advanced javascript (node app development)",
-  "main": "index.js",
+  "main": "server.js",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "howler": "^2.1.1",
-    "lodash": "^4.17.11"
+    "express-handlebars": "^3.0.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "mocha": "^6.1.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint **/*.js",
+    "test": "mocha test/**",
     "start": "node server.js"
   },
   "repository": {
